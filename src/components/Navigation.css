@@ -1,5 +1,4 @@
 .nav {
-    
 }
 
 .nav a {
@@ -9,7 +8,10 @@
     font-size: 20px;
     text-align: right;
     font-weight: 600;
-    margin: 5px 20px 10px 5px;
+}
+
+.nav svg {
+    margin: 7px 20px 10px 5px;
 }
 
 .nav a:not(:last-child) {

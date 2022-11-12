@@ -1,17 +1,19 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import './Navigation.css'
 
 function Navigation() {
     const linkToGithub = () => {
         window.open("https://github.com/DevMyungyun")
     }
+    const linkToLinkedin = () => {
+        window.open("https://www.linkedin.com/in/myeong-yeon-cho-3309b9161/")
+    }
     return (
         <div className="nav">
-            <div onClick={linkToGithub}>github</div>
-            <Link to="/">Home</Link>
-            <Link to="/about">About</Link>
-            <Link to="/example">Example</Link>
+            <FontAwesomeIcon onClick={linkToGithub} icon={faGithub} />
+            <FontAwesomeIcon onClick={linkToLinkedin} icon={faLinkedin} />
         </div>
     )
 }
