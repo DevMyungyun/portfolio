@@ -1,19 +1,32 @@
 import React from "react";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import {faGithub, faLinkedin} from "@fortawesome/free-brands-svg-icons";
 import './Navigation.css'
+import {faBars} from "@fortawesome/free-solid-svg-icons";
 
-function Navigation() {
+function Navigation(props) {
+    const link = props.navigation.link;
+    const sidebarIconClick = () => {
+        props.simpleSidebarClick();
+    }
     const linkToGithub = () => {
-        window.open("https://github.com/DevMyungyun")
+        window.open(link.github);
     }
     const linkToLinkedin = () => {
-        window.open("https://www.linkedin.com/in/myeong-yeon-cho-3309b9161/")
+        window.open(link.linkedin);
     }
     return (
         <div className="nav">
-            <FontAwesomeIcon onClick={linkToGithub} icon={faGithub} />
-            <FontAwesomeIcon onClick={linkToLinkedin} icon={faLinkedin} />
+            <div className="left">
+                <FontAwesomeIcon icon={faBars}
+                    onClick={sidebarIconClick}
+                />
+            </div>
+            <div className="right">
+                <FontAwesomeIcon onClick={linkToGithub} icon={faGithub}/>
+                <FontAwesomeIcon onClick={linkToLinkedin} icon={faLinkedin}/>
+            </div>
+
         </div>
     )
 }

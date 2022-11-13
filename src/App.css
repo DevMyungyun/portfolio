@@ -3,8 +3,8 @@
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  /* height: 40vmin;
+  pointer-events: none; */
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -16,19 +16,46 @@
 .App-header {
   background-color: #282c34;
   min-height: 50px;
-  display: flex;
-  flex-direction: column;
-  z-index: 2;
-  align-items: flex-end;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  display: flex; /* or css grid for more intricate layouts */
+  flex-direction: column;
+}
+
+.App-body {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: stretch;
+}
+
+/* TODO need to sidebar height 100% Setting */
+.App-body .sidebar {
+  float: left;
+  /* top: auto; */
+  width: 150px;
+  height: 100vh;
+  display: flex;
+  background-color: #282c34;
+  align-items: stretch;
+  text-align: center;
+  transition: all ease 0.3s 0s;
+}
+
+.App-body .main {
+  flex-grow: 1; /* make it stretch to the bottom even if little content */
+  overflow-y: scroll; /* optional */
 }
 
 .App-footer {
   position: fixed;
   bottom: 0px;
-  background-color: #282c34;
+  background-color: #2d63ce;
   min-height: 50px;
   display: flex;
   flex-direction: column;

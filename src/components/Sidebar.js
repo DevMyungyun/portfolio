@@ -1,20 +1,25 @@
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faHouse, faUser, faList, faBriefcase, faPaperPlane} from '@fortawesome/free-solid-svg-icons'
 import React from "react";
 import "./Sidebar.css";
-function Sidebar() {
+function Sidebar(props) {
+    const menu = props.sidebar;
+    const simpleSidebar = props.simpleSidebar
+    const icons = [faHouse, faUser, faList, faBriefcase, faPaperPlane];
+
     return (
-        <div>
-            <a href="#home">
-                <i class="fa fa-fw fa-home"></i>
-                Home</a>
-            <a href="#services">
-                <i class="fa fa-fw fa-wrench"></i>
-                Services</a>
-            <a href="#clients">
-                <i class="fa fa-fw fa-user"></i>
-                Clients</a>
-            <a href="#contact">
-                <i class="fa fa-fw fa-envelope"></i>
-                Contact</a>
+        <div className="menus">
+            {menu.map((el, i) => {
+                return <div className="menu">
+                    <FontAwesomeIcon icon={icons[i]}/> 
+                    {!simpleSidebar
+                        ? <span>{el}</span>
+                        : null}
+
+                </div>
+            })
+}
+
         </div>
     )
 }

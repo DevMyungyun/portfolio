@@ -1,17 +1,30 @@
 .nav {
+    display: flex;
+    /* flex-direction: column; */
+    /* align-items: ; */
+    justify-content: space-between;
 }
 
-.nav a {
-    text-decoration: none;
+.nav .left {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 6px 10px 0px 8px;
+}
+
+.nav .right {
     color: beige;
-    text-transform: uppercase;
-    font-size: 20px;
-    text-align: right;
     font-weight: 600;
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    margin: 6px 10px 0px 0px;
 }
 
 .nav svg {
-    margin: 7px 20px 10px 5px;
+    margin: 5px 10px 5px 10px;
+    cursor: pointer;
 }
 
 .nav a:not(:last-child) {

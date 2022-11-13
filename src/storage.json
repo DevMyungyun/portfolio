@@ -1,0 +1,35 @@
+{
+    "language" : {
+        "en": "english",
+        "kr": "korean"
+    },
+    "darkMode": false,
+    "menu" : [
+        "Home",
+        "About",
+        "Experience",
+        "Work",
+        "Contact"
+    ],
+    "contents": {
+        "Navigation": {
+            "link": {
+                "github": "https://github.com/DevMyungyun", 
+                "linkedin": "https://www.linkedin.com/in/myeong-yeon-cho-3309b9161/"
+            }
+        },
+        "english": {
+            "Home": {
+                "intro": ["Hello!", "I'm Joseph Cho","Software Engineer"],
+                "positions": ["Software Engineer", "DevOps Engineer", "Site Reliability Engineer"],
+                "description": ["Since 2018, I have been on a great journey to be a part of the IT industry.",
+                                "I love to build, test, deploy, monitor, and automate applications."
+                                ]
+            }
+        },
+        "korea": {
+
+        }
+        
+    }
+}
