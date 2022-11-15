@@ -25,7 +25,43 @@
                 "description": ["Since 2018, I have been on a great journey to be a part of the IT industry.",
                                 "I love to build, test, deploy, monitor, and automate applications."
                                 ]
-            }
+            },
+            "About":{},
+            "Career": {
+                "tab": ["ITMSG", "MBI Solution", "Current"],
+                "tabPanel": [
+                    {
+                        "image": "",
+                        "description": [
+                            "In my position as Software Engineer",
+                            "Major Responsibilities:",
+                            "Delivering exceptional expertise in troubleshooting and testing errors among automation solution (Ansible) and target servers; facilitating clients for management of 1,000+ various OS servers with server automation-monitoring web; evaluating legacy system architecture to attain desired results; integrating monitoring application built with Java (Spring Framework) in automation management tool with REST API.",
+                            "Key Accomplishments, I achieved during this role:",
+                            "• Automated 500+ servers by developing customer resolution management tool (REST API Server) through Node.JS utilization.",
+                            "• Slashed 1% data defect rate by designing /developing scheduler to synchronize existing database (MSSQL) and target server stored database (PostgreSQL) while using Node.JS.",
+                            "• Reduced 20% total automating elapsed time by maintaining close collaboration with director."
+                        ]
+                    },
+                    {
+                        "image": "",
+                        "description": [
+                            "In my position as Software Developer",
+                            "Major Responsibilities:",
+                            "Implementing best practices for development and designing of various software, while ensuring compliance with standard procedures; utilizing PHP and Node.JS to design and develop additional features as well as modules in applications; delivering exceptional expertise in resolving errors and deploying containerized applications successfully by monitoring CI/CD pipeline; administering and monitoring issues at high transaction volume by 1000+ chat rooms simultaneously; synchronizing large image files of 3 TB from legacy cloud system to new cloud system for migration with network security setting.",
+                            "Key Accomplishments, I attained during this role:",
+                            "• Enhanced message security for 100+ client companies by collaborating with product manager to establish new message encryption configuration pages and integrate customized messages security library.",
+                            "• Reduced organizational costs by migrating legacy systems to MSA environment for delivery of scalability, monitoring, and CI/CD by cooperating with other product developer teams through Kubernetes."
+                        ]
+                    },
+                    {
+                        "image": "",
+                        "description": [
+                        ]
+                    }
+                ]
+            },
+            "Portfolio": {},
+            "Contact": {}
         },
         "korea": {
 

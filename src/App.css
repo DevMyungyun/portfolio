@@ -41,7 +41,8 @@ body {
   width: 150px;
   height: 100vh;
   display: flex;
-  background-color: #282c34;
+  background-color: #fafafa;
+  border-right: 1px solid rgba(0,0,0,.07);
   align-items: stretch;
   text-align: center;
   transition: all ease 0.3s 0s;
