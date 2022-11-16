@@ -1,7 +1,7 @@
 .react-tabs {
     display: flex;
     margin-left: 39px;
-    width: 93%;
+    width: 90%;
     height: 90%;
     border: 1px solid #bebcbb;
     border-radius: 0.6rem;
@@ -37,9 +37,9 @@
   }
   
   .react-tabs__tab-panel {
-    margin: ;
+    /* margin: ; */
     display: none;
-    width: 500px;
+    /* width: 90%; */
   }
   
   .react-tabs__tab-panel--selected {
@@ -56,4 +56,14 @@
   
   .panel-content {
     /* text-align: center; */
+    margin: 15px 15px 15px 15px;
+  }
+
+  .description {
+    width: 50%;
+  }
+
+  img {
+    width: 100px;
+    height: 50px;
   }

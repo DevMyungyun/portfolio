@@ -31,7 +31,9 @@
                 "tab": ["ITMSG", "MBI Solution", "Current"],
                 "tabPanel": [
                     {
-                        "image": "",
+                        "period": "2018 - 2020",
+                        "companyImage": "itmsg.jpg",
+                        "clientsImage": ["samsung-security.png","hyungdai-card.png","hyungdai-capital.png","doosan-digital-innovation.png"],
                         "description": [
                             "In my position as Software Engineer",
                             "Major Responsibilities:",
@@ -43,7 +45,9 @@
                         ]
                     },
                     {
-                        "image": "",
+                        "period": "2021",
+                        "companyImage": "happytalk.png",
+                        "clientsImage": [],
                         "description": [
                             "In my position as Software Developer",
                             "Major Responsibilities:",
@@ -54,7 +58,8 @@
                         ]
                     },
                     {
-                        "image": "",
+                        "companyImage": "",
+                        "clientsImage": [],
                         "description": [
                         ]
                     }

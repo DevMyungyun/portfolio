@@ -5,7 +5,6 @@ class Career extends Component {
     render() {
         return (
             <div>
-                <h1>This is Career Page</h1>
                 <CareerHistory CareerHistory={this.props} />
             </div>
         );

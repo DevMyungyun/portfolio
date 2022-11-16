@@ -38,7 +38,7 @@ body {
 .App-body .sidebar {
   float: left;
   /* top: auto; */
-  width: 150px;
+  /* width: 150px; */
   height: 100vh;
   display: flex;
   background-color: #fafafa;
