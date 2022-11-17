@@ -2,9 +2,9 @@ import React, { useEffect } from 'react';
 
 function PortfolioList(props) {
 
-    useEffect() {
-        
-    }
+    // useEffect() {
+
+    // }
     return (
         <div>
             <tabl>

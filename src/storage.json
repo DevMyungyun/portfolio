@@ -32,6 +32,7 @@
                 "tabPanel": [
                     {
                         "period": "2018 - 2020",
+                        "company": "ITMSG",
                         "companyImage": "itmsg.jpg",
                         "clientsImage": ["samsung-security.png","hyungdai-card.png","hyungdai-capital.png","doosan-digital-innovation.png"],
                         "description": [
@@ -46,6 +47,7 @@
                     },
                     {
                         "period": "2021",
+                        "company": "MBI Solution(HappyTalk)",
                         "companyImage": "happytalk.png",
                         "clientsImage": [],
                         "description": [

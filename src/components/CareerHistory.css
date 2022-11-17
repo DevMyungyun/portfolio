@@ -1,69 +1,68 @@
 .react-tabs {
-    display: flex;
-    margin-left: 39px;
-    width: 90%;
-    height: 90%;
-    border: 1px solid #bebcbb;
-    border-radius: 0.6rem;
-    color: #364149;
-    background: #f4f9fc;
-  }
-  
-  .react-tabs__tab-list {
-    display: flex;
-    flex-direction: column;
-    width: 170px;
-    margin: 0;
-    padding: 0;
-    border-radius: 0.6rem;
-    color: #364149;
-    background: #d0ebf3;
-  }
-  
-  .react-tabs__tab {
-    height: 70px;
-    list-style: none;
-    padding: 12px 6px;
-    cursor: pointer;
-    color: #364149;
-  }
-  
-  .react-tabs__tab--selected {
-    background: #aadcec;
-    border-color: #b4cdd4;
-    border-radius: 0.6rem;
-    border-left: 4px solid #8cc0c7;
-    color: #364149;
-  }
-  
-  .react-tabs__tab-panel {
-    /* margin: ; */
-    display: none;
-    /* width: 90%; */
-  }
-  
-  .react-tabs__tab-panel--selected {
-    display: block;
-  }
-  
-  .react-tabs__tab {
-    padding-left: 24px;
-  }
-  
-  .react-tabs__tab--selected {
-    padding-left: 21px;
-  }
-  
-  .panel-content {
-    /* text-align: center; */
-    margin: 15px 15px 15px 15px;
-  }
+  width: 90%;
+  margin: 20px 0px 0px 30px;
+}
 
-  .description {
-    width: 50%;
-  }
+react-tabs__tab-list {
+  border-bottom: none;
+}
+.react-tabs__tab {
+  border-radius: 13px 13px 0px 0px;
+}
 
-  img {
-    width: 100px;
-    height: 50px;
+.react-tabs__tab-panel .react-tabs__tab-panel--selected {
+  background-color: #dddddd;
+}
+
+.react-tabs__tab:hover {
+  background-color: #dddddd;
+  cursor: pointer;
+  transition: all ease 0.3s 0s;
+}
+.react-tabs__tab-panel--selected {
+  background-color: #dddddd;
+}
+
+.company-logo {
+  animation: bottomToTop 0.5s;
+}
+
+.clients-banner {
+  /* position:absolute;  */
+  top:0px; 
+  left:0px; 
+  /* overflow:hidden;  */
+  white-space: nowrap;
+  /* animation: bannermove 10s linear infinite; */
+}
+
+.description {
+  animation: rightToLeft 0.5s;
+}
+
+@keyframes rightToLeft {
+  0% {
+    transform: translateX(100%);
   }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes bottomToTop {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes bannermove {
+  0% {
+      transform: translate(0, 0);
+  }
+  100% {
+      transform: translate(-100%, 0);
+  }
+}

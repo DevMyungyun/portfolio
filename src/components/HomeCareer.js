@@ -3,20 +3,9 @@ import {Tab, Tabs, TabList, TabPanel} from 'react-tabs';
 import '../../node_modules/react-tabs/style/react-tabs.css'
 import './CareerHistory.css';
 
-function importAll(r) {
-    let images = {};
-    r
-        .keys()
-        .map((item, index) => {
-            images[item.replace('./', '')] = r(item);
-        });
-    return images;
-}
-
-const images = importAll(require.context('../images', false, /\.(png|jpe?g|svg)$/));
-
-function CareerHistory(props) {
-    const career = props.CareerHistory.career;
+function HomeCareer(props) {
+    console.log(props);
+    const career = props.HomeCareer;
     const tab = career.tab;
     const tabPanel = career.tabPanel;
     return (
@@ -36,16 +25,10 @@ function CareerHistory(props) {
                         .description
                         .map(el2 => {
                             contents.push(
-                                <p>{el2}</p>
+                                <p>{el2.indexOf("•") !== -1 || el2.indexOf("In my position") !== -1 ? el2 : null}</p>
                             );
                         })
 
-                    const clientsImage = [];
-                    el
-                        .clientsImage
-                        .map(el2 => {
-                            clientsImage.push(<img src={images[el2]}/>);
-                        })
                     return <TabPanel>
                         <table>
                             <tr>
@@ -55,8 +38,8 @@ function CareerHistory(props) {
                             </tr>
                             <tr>
                                 <td>
-                                    Company
-                                    <img className='company-logo' src={images[el.companyImage]}/></td>
+                                    <span>@{el.company}</span>
+                                </td>
                                 <td rowSpan={2}>
                                     <div className="panel-content">
                                         <div className='description'>
@@ -67,15 +50,6 @@ function CareerHistory(props) {
                             </tr>
 
                         </table>
-                        {clientsImage.length !== 0
-                            ? <div>
-                                    Clients
-                                    <div className='clients-banner'>
-                                        {clientsImage}
-                                    </div>
-                                </div>
-
-                            : null}
                     </TabPanel>
                 })
 }
@@ -85,4 +59,4 @@ function CareerHistory(props) {
     );
 }
 
-export default CareerHistory;
+export default HomeCareer;

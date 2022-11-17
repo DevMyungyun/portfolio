@@ -1,10 +1,5 @@
 import React, { Component } from 'react';
 
-function mapStateToProps(state) {
-    return {
-
-    };
-}
 
 class Contact extends Component {
     render() {

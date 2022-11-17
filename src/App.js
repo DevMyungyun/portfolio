@@ -36,7 +36,7 @@ function App() {
                             className='sidebar'
                             style={{
                             'width': `${simpleSidebar
-                                ? '60px'
+                                ? '45px'
                                 : '150px'}`
                         }}>
                             <Sidebar sidebar={storage.menu} simpleSidebar={simpleSidebar}/>
@@ -48,7 +48,7 @@ function App() {
                                     path='/'
                                     exact={true}
                                     element={< Home home = {
-                                    storage.contents.english.Home
+                                    storage.contents.english
                                 } />}/>
                                 <Route
                                     path='/about'
